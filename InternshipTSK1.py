@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Set matplotlib backend for PyCharm (prevents blank plots)
-plt.switch_backend('TkAgg')  # or 'Qt5Agg'
+plt.switch_backend('TkAgg')  # or 'Qt5Agg'A
 
 # Load the Iris dataset
 iris = sns.load_dataset('iris')
