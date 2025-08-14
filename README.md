@@ -29,7 +29,7 @@ A Python chatbot that answers general health questions using OpenAI's GPT-3.5, w
    pip install -r requirements.txt 
    
 
-# Task 6: House Price Prediction
+# Task 6: House Price Prediction:
 
 ## Results
 - **MAE**: $18,742
