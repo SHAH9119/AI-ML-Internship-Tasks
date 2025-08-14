@@ -1,9 +1,8 @@
-# health_chatbot.py
+cd C:\Users\Syed Haider Ali\PycharmProjects\PythonProject12
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
-# Initialize client
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
