@@ -47,7 +47,7 @@ A Python chatbot that answers general health questions using OpenAI's GPT-3.5, w
    python house_price_prediction.py
    ```
 
-## Code Structure
+##  Code Structure
 - Data preprocessing (handling missing values, feature selection)
 - Gradient Boosting model training
 - Performance evaluation (MAE, R²)

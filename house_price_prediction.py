@@ -70,7 +70,7 @@ plot_path = os.path.join(os.path.dirname(DATA_PATH), "price_prediction_plot.png"
 plt.savefig(plot_path)
 print(f"\nPlot saved to: {plot_path}")
 
-# Step 7: Save Model
+# Step 7:Save Model
 model_path = os.path.join(os.path.dirname(DATA_PATH), "house_price_model.pkl")
 joblib.dump(model, model_path)
 print(f"Model saved to: {model_path}")
