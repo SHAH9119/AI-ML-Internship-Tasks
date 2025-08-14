@@ -27,3 +27,27 @@ A Python chatbot that answers general health questions using OpenAI's GPT-3.5, w
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt 
+   
+
+# Task 6: House Price Prediction
+
+## Results
+- **MAE**: $18,742
+- **R² Score**: 0.887  
+![Prediction Plot](results.png)
+
+## How to Run
+1. Download data from [Kaggle](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data)
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run:
+   ```bash
+   python house_price_prediction.py
+   ```
+
+## Code Structure
+- Data preprocessing (handling missing values, feature selection)
+- Gradient Boosting model training
+- Performance evaluation (MAE, R²)
