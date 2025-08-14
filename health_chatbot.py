@@ -1,7 +1,11 @@
-import openai
+# health_chatbot.py
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
-openai.api_key = "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"
-
+# Initialize client
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 DISCLAIMER = """
 **Disclaimer**: I am an AI assistant and cannot provide medical advice. 
@@ -18,22 +22,23 @@ def health_chatbot():
         if user_input.lower() == 'quit':
             break
 
-
         prompt = f"""
-        You are a friendly medical assistant. Answer the following health-related question clearly and safely.
-        DO NOT provide diagnoses or treatment plans. Only offer general information and advise consulting a doctor.
+        As a medical assistant, provide general information about:
+        {user_input}
 
-        Question: {user_input}
-        Answer: 
+        Rules:
+        1. No diagnoses or treatment plans
+        2. Maximum 2 sentences
+        3. Always suggest consulting a doctor
         """
 
         try:
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model="gpt-3.5-turbo",
                 messages=[{"role": "user", "content": prompt}],
-                temperature=0.5  # Keeps responses conservative
+                temperature=0.3
             )
-            print("\nBot:", response.choices[0].message['content'])
+            print("\nBot:", response.choices[0].message.content)
         except Exception as e:
             print("Error:", e)
 
