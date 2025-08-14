@@ -1,4 +1,3 @@
-cd C:\Users\Syed Haider Ali\PycharmProjects\PythonProject12
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
