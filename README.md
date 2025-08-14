@@ -51,3 +51,11 @@ A Python chatbot that answers general health questions using OpenAI's GPT-3.5, w
 - Data preprocessing (handling missing values, feature selection)
 - Gradient Boosting model training
 - Performance evaluation (MAE, R²)
+- **Model**: Gradient Boosting Regressor
+- **Features Used**: 
+  - OverallQual
+  - GrLivArea  
+  - YearBuilt
+- **Performance**:
+  - MAE: $18,742
+  - R²: 0.887

@@ -75,7 +75,7 @@ model_path = os.path.join(os.path.dirname(DATA_PATH), "house_price_model.pkl")
 joblib.dump(model, model_path)
 print(f"Model saved to: {model_path}")
 
-# Sample Prediction
+#Sample Prediction
 sample_house = [[7, 1500, 800, 1200, 1995, 2]]  # Modify with your own values
 predicted_price = model.predict(sample_house)[0]
 print(f"\nSample House Prediction: ${predicted_price:,.0f}")
