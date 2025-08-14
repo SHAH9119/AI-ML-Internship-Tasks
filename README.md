@@ -11,3 +11,19 @@ Analyze and visualize the Iris dataset using Python.
 ## Files
 - `iris_analysis.py`: Full Python code.
 - Plots (optional): `sepal_scatter.png`, `histograms.png`.
+
+
+# Task 4: General Health Query Chatbot
+
+## Overview
+A Python chatbot that answers general health questions using OpenAI's GPT-3.5, with safety disclaimers.
+
+## Features
+- Prompt engineering for safe, non-medical advice
+- Environment variable-based API key security
+- Command-line interface
+
+## Setup
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
